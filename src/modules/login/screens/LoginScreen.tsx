@@ -1,9 +1,16 @@
-import { BackgroundImage } from '../styles/LoginScreen.style';
+import { BackgroundImage, Container, Login } from '../styles/LoginScreen.style';
 
 export const LoginScreen = () => {
   return (
     <>
-      <BackgroundImage src="./bg-image.svg" />
+      <Container>
+        <Login>
+          <BackgroundImage src="./bg-image.svg" />
+        </Login>
+        <Login>
+          <input type="text" />
+        </Login>
+      </Container>
     </>
   );
 };
