@@ -1,4 +1,11 @@
-import { BackgroundImage, Container, LeftSide, RigthSide } from '../styles/LoginScreen.style';
+import { InputDefault } from '../../../shared/inputs/input/input';
+import {
+  BackgroundImage,
+  Container,
+  Content,
+  LeftSide,
+  RigthSide,
+} from '../styles/LoginScreen.style';
 
 export const LoginScreen = () => {
   return (
@@ -8,9 +15,10 @@ export const LoginScreen = () => {
           <BackgroundImage src="./bg-image.svg" />
         </LeftSide>
         <RigthSide>
-          <Container>
-            <input type="text" />
-          </Container>
+          <Content>
+            <InputDefault placeholder="Digite seu e-mail" sizeType="large" />
+            <InputDefault placeholder="Digite sua senha" sizeType="large" />
+          </Content>
         </RigthSide>
       </Container>
     </>
